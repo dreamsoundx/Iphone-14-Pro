@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+@import url("https://fonts.googleapis.com/css?family=League+Spartan:300,400,500");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 32px;
+}
+
+body {
+  line-height: 1;
+  font-family: "League Spartan", sans-serif;
+  color: #161515;
+  background: #fff;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+[class*=__container] {
+  margin: 0px auto;
+  max-width: 1170px;
+  padding: 0px 15px;
+}
+
+.titles {
+  color: #000;
+}
+.titles__label {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 180%;
+}
+.titles__item {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 112.5%;
+}
+
+.models {
+  padding: 43px 0px 142px 0px;
+}
+.models__container {
+  margin: 0px auto;
+  max-width: 561px;
+  padding: 0px 15px;
+  text-align: center;
+}
+.models__header:not(:last-child) {
+  margin-bottom: 63px;
+}
+.models__items:not(:last-child) {
+  margin-bottom: 122px;
+}
+.item-models:not(:last-child) {
+  margin-bottom: 80px;
+}
+.item-models__picture {
+  background-color: #f8f8f8;
+  margin: 0px auto;
+}
+.item-models__picture:not(:last-child) {
+  margin-bottom: 67px;
+}
+.item-models__picture_watch2 {
+  padding: 110px 65.5px;
+  max-width: 417px;
+}
+.item-models__picture_watch3 {
+  padding: 67px 2px;
+  max-width: 500px;
+}
+.item-models__img {
+  max-width: 100%;
+}
+.item-models .item-models__info {
+  font-size: 32px;
+}
+.item-title:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.item-text {
+  color: #161515;
+  font-weight: 300;
+  line-height: 155%;
+}
+
+.desc-models__title:not(:last-child) {
+  margin-bottom: 62px;
+}
+.desc-models__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 170%; /* 40.8px */
+}
+.desc-models__link {
+  color: #bb8b5d;
+  font-weight: 500;
+}
+.desc-models__link:hover {
+  text-decoration-line: underline;
+}
