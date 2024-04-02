@@ -1,27 +1,94 @@
 /* 
 &display=swap
-&subset=cyrillic-ext 
+&subset=cyrillic-ext
 */
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap&subset=cyrillic-ext');
 @import '_null';
-@import url('https://fonts.googleapis.com/css?family=League+Spartan:300,400,500');
 
 html {
-  font-size: 32px;
+  font-size: 14px;
 }
 body {
   line-height: 1;
-  font-family: 'League Spartan', sans-serif;
-  color: #161515;
+  font-family: 'Inter', sans-serif;
+  color: #0a0a0a;
   background: #fff;
 }
 
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 [class*='__container'] {
   margin: 0px auto;
-  max-width: 1170px;
+  max-width: 1230px;
   padding: 0px 15px;
+}
+
+.header {
+}
+.main {
+  flex: 1 1 auto;
+}
+.offer {
+  background: #f5f5f7;
+  // .offer__container
+
+  &__container {
+  }
+
+  // .offer__content
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 71px 123px 40px 140px;
+  }
+
+  // .offer__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    color: #490e84;
+    text-transform: uppercase;
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 46px;
+    }
+  }
+
+  // .offer__image
+
+  &__image {
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+
+  // .offer__button
+
+  &__button {
+    align-self: center;
+    padding: 24px 117px 22px 118px;
+    background: #490e84;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+.image-offer {
+  // .image-offer__item
+
+  &__item {
+    max-width: 100%;
+  }
+}
+.footer {
 }
