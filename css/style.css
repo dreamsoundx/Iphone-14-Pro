@@ -76,6 +76,14 @@ body {
   padding: 0px 15px;
 }
 
+.titles {
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #717171;
+}
+
 .main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -126,4 +134,48 @@ body {
 
 .image-offer__item {
   max-width: 100%;
+}
+
+.whats-new__content {
+  padding: 87px 0px 75px 0px;
+}
+.whats-new__title:not(:last-child) {
+  margin-bottom: 50px;
+}
+.whats-new__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.whats-new__image {
+  padding: 37px 100px 37px 100px;
+}
+.whats-new__item {
+  max-width: 100%;
+}
+.whats-new__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px;
+  max-width: 560px;
+}
+.whats-new__text {
+  line-height: 130%;
+}
+.whats-new__text_bold {
+  font-weight: 700;
+  font-size: 20px;
 }
