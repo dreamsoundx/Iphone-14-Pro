@@ -105,6 +105,9 @@ body {
 .offer__title:not(:last-child) {
   margin-bottom: 46px;
 }
+.offer__image {
+  max-width: 100%;
+}
 .offer__image:not(:last-child) {
   margin-bottom: 26px;
 }

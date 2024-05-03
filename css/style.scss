@@ -45,6 +45,8 @@ body {
   &__content {
     display: flex;
     flex-direction: column;
+    // align-items: center;
+    // text-align: center;
     padding: 71px 123px 40px 140px;
   }
 
@@ -64,6 +66,7 @@ body {
   // .offer__image
 
   &__image {
+    max-width: 100%;
     &:not(:last-child) {
       margin-bottom: 26px;
     }
