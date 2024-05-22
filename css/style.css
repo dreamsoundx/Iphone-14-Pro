@@ -139,10 +139,10 @@ body {
 }
 
 .whats-new__content {
-  padding: 87px 0px 75px 0px;
+  padding: 90px 0px 75px 0px;
 }
 .whats-new__title:not(:last-child) {
-  margin-bottom: 50px;
+  margin-bottom: 54px;
 }
 .whats-new__row {
   display: -webkit-box;
