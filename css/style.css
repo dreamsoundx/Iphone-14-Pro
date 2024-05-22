@@ -153,6 +153,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  row-gap: 30px;
 }
 .whats-new__left {
   -webkit-box-flex: 1;
