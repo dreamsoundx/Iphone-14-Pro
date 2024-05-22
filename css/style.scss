@@ -122,28 +122,42 @@ body {
 
   // .whats-new__body
 
-  &__body {
+  &__row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  // .whats-new__left
+
+  &__left {
+    flex: 1 1 auto;
+  }
+
+  // .whats-new__right
+
+  &__right {
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 
   // .whats-new__image
 
   &__image {
-    padding: 37px 100px 37px 100px;
+    // padding: 37px 100px 37px 100px;
   }
 
   // .whats-new__item
 
-  &__item {
+  &__img {
     max-width: 100%;
   }
 
   // .whats-new__info
 
-  &__info {
+  &__body {
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
