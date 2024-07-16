@@ -28,6 +28,19 @@ body {
   padding: 0px 15px;
 }
 
+[class*='_ibg'] {
+  position: relative;
+}
+
+[class*='_ibg'] img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 .titles {
   font-weight: 700;
   font-size: 32px;
@@ -97,7 +110,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
-    transition: 0.3s;
+    transition: all 0.5s ease 0s;
     &:hover {
       box-shadow: 0 16px 24px 0 rgba(38, 38, 38, 0.2),
         0 8px 16px 0 rgba(38, 38, 38, 0.24);
@@ -181,6 +194,105 @@ body {
 
   &__img {
     max-width: 100%;
+  }
+}
+
+.colors {
+  // .colors__container
+
+  &__container {
+  }
+
+  // .colors__content
+
+  &__content {
+    padding: 75px 0px 129px 0px;
+  }
+
+  // .colors__title
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 55px;
+    }
+  }
+
+  // .colors__items
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -40px;
+    row-gap: 80px;
+  }
+
+  // .colors__item
+
+  &__item {
+    padding: 0px 40px;
+    flex: 1 1 25%;
+    min-width: 290px;
+    @media (max-width: 1109.98px) {
+      flex: 1 1 50%;
+    }
+  }
+}
+
+.item-colors {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  @media (min-width: 1440px) {
+    max-width: 240px;
+  }
+
+  // .item-colors__image
+
+  &__image {
+    padding: 0px 0px 133.33% 0px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+    background: #f5f5f7;
+    &:hover {
+      box-shadow: 0 16px 24px 0 rgba(38, 38, 38, 0.2),
+        0 8px 16px 0 rgba(38, 38, 38, 0.24);
+    }
+  }
+
+  // .item-colors__img
+
+  &__img {
+  }
+
+  // .item-colors__body
+
+  &__body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+  }
+
+  // .item-colors__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #0a0a0a;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  // .item-colors__info
+
+  &__info {
+    flex: 1 1 auto;
+    line-height: 130%;
   }
 }
 
@@ -286,7 +398,7 @@ body {
     color: #490e84;
     text-align: center;
     text-transform: uppercase;
-    transition: 0.3s;
+    transition: all 0.5s ease 0s;
     &:hover {
       box-shadow: 0 16px 24px 0 rgba(38, 38, 38, 0.2),
         0 8px 16px 0 rgba(38, 38, 38, 0.24);
